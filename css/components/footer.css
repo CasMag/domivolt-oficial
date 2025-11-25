@@ -1,0 +1,112 @@
+/* css/components/footer.css */
+
+.main-footer {
+    background-color: #002e5b; /* Azul oscuro, más formal que el del header */
+    color: white;
+    padding: 40px 20px 20px;
+    border-top: 5px solid #ffcc00; /* Línea de color para un detalle */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1; /* Distribuye el espacio equitativamente */
+    min-width: 250px; /* Evita que las columnas se compriman demasiado */
+}
+
+.footer-column h3, .footer-column h4 {
+    color: #ffcc00; /* Amarillo/Dorado para los títulos */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-column p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Enlaces de Emergencia */
+.footer-emergency-link {
+    display: block;
+    color: #ff0000; /* Rojo para destacar la urgencia */
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.footer-emergency-link:hover {
+    text-decoration: underline;
+}
+
+/* Enlaces de Navegación */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.quick-links a:hover {
+    color: #ffcc00;
+}
+
+/* Redes Sociales */
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 15px 0;
+}
+
+/* ------------------------------------ */
+/* RESPONSIVIDAD (Móvil) */
+/* ------------------------------------ */
+@media (max-width: 768px) {
+    /* Apila las columnas en móviles */
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separador entre columnas */
+    }
+    
+    .footer-column:last-child {
+        border-bottom: none; /* Quita el separador en la última columna */
+        margin-bottom: 0;
+    }
+}
