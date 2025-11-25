@@ -1,0 +1,113 @@
+/* css/pages/home.css */
+
+/* Estilos de la Sección General */
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f9; /* Fondo ligero para destacar */
+}
+
+.section-title {
+    color: #004d99;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Estilos de la Maquetación (Grid) */
+.services-grid {
+    display: grid;
+    gap: 30px; /* Espacio entre las tarjetas */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilos de las Tarjetas (Service Card) */
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    color: #004d99;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.icon-wrapper {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.features-list li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.features-list li::before {
+    content: "✅"; /* Checkmark como viñeta */
+    margin-right: 0.5em;
+}
+
+/* Estilos Específicos de los Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-emergency {
+    background-color: #ff0000; /* Rojo llamativo para la urgencia */
+    color: white;
+}
+
+.btn-emergency:hover {
+    background-color: #cc0000;
+}
+
+.btn-program {
+    background-color: #ffcc00; /* Amarillo para presupuestos */
+    color: #004d99;
+}
+
+.btn-program:hover {
+    background-color: #ffb300;
+}
+
+
+/* ------------------------------------ */
+/* RESPONSIVIDAD (Móvil a Desktop) */
+/* ------------------------------------ */
+@media (min-width: 768px) {
+    /* En pantallas más grandes, activa el grid de 2 columnas */
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
