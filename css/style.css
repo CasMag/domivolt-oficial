@@ -514,7 +514,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-          
+           .hero img {
+                width: 250px;
+                height: auto;
+            }
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -557,6 +560,10 @@
         }
 
         @media (max-width: 480px) {
+          .hero img {
+                width: 200px;
+                height: auto;
+            }
             .hero h1 {
                 font-size: 2rem;
             }
@@ -582,4 +589,5 @@
                 display: none;
             }
         }
+
     
